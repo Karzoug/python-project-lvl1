@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 """Execute main module."""
 from brain_games.cli import welcome_user
 

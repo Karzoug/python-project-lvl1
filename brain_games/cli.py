@@ -1,5 +1,3 @@
-#!/usr/bin/python3
-
 """docstring for cli file."""
 import prompt
 
