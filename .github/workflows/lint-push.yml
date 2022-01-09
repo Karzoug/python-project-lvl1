@@ -4,7 +4,9 @@ jobs:
   lint-check:
     runs-on: ubuntu-latest
     steps:
-       -name: build-brain-games
+      - name: checkout repo
+        uses: actions/checkout@v2
+      - name: build brain games
         run: make build
-      - name: run-linter
+      - name: run linter
         run: make lint
