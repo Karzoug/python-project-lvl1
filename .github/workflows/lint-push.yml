@@ -4,8 +4,14 @@ jobs:
   lint-check:
     runs-on: ubuntu-latest
     steps:
+      - name: Setup Python # Set Python version
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.6"
       - name: checkout repo
         uses: actions/checkout@v2
+      - name: install poetry
+        run: make install
       - name: build brain games
         run: make build
       - name: run linter
