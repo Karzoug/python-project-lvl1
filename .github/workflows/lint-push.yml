@@ -1,0 +1,10 @@
+name: lint-push
+on: push
+jobs:
+  lint-check:
+    runs-on: ubuntu-latest
+    steps:
+       -name: build-brain-games
+        run: make build
+      - name: run-linter
+        run: make lint
