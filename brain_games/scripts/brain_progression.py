@@ -14,10 +14,10 @@ def main():
         number = random.randint(1, 10)
         step_inc = random.randint(2, 10)
         missing_pos = random.randint(1, progression_length)
-
+        print(missing_pos)
         print('Question:', end=" ")
 
-        for i in range(0, progression_length):
+        for i in range(1, progression_length):
 
             if i == missing_pos:
                 right_answer = number
