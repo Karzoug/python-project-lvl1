@@ -1,12 +1,10 @@
 """Play in Prime-game"""
 from .game_template import template_game
-from brain_games.scripts.games import main as games_main
 import random
 
 
 def main():
 
-    games_main()
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
 
     @template_game
@@ -16,7 +14,7 @@ def main():
         right_answer = 'no' if dividers else 'yes'
 
         while answer not in ['yes', 'no', 'Yes', 'No']:
-            print('Question:', number)
-            answer = input("Your answer:")
+            print('Question: ', number)
+            answer = input("Your answer: ")
 
         return answer, right_answer

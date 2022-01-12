@@ -1,12 +1,10 @@
 """Play in GCD-game."""
 from .game_template import template_game
-from brain_games.scripts.games import main as games_main
 import random
 
 
 def main():
 
-    games_main()
     print('Find the greatest common divisor of given numbers.')
 
     @template_game
@@ -28,7 +26,7 @@ def main():
         right_answer = gcd
 
         while not isinstance(answer, int):
-            print("Question:", number1, number2)
-            answer = int(input("Your answer:",))
+            print("Question: ", number1, number2)
+            answer = int(input("Your answer: ",))
 
         return answer, right_answer
