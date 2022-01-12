@@ -13,6 +13,7 @@ def template_game(func):
     while win_game != 3:
 
         answer, right_answer = func()
+        answer, right_answer = str(answer), str(right_answer)
 
         if answer == right_answer:
             win_game += 1

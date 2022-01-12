@@ -15,19 +15,17 @@ def main():
         step_inc = random.randint(2, 10)
         missing_pos = random.randint(1, progression_length)
 
-        while not isinstance(answer, int):
+        print('Question:', end=" ")
 
-            print('Question:', end=" ")
+        for i in range(0, progression_length):
 
-            for i in range(0, progression_length):
+            if i == missing_pos:
+                right_answer = number
+                print("..", end=" ")
+            else:
+                print(number, end=" ")
+            number += step_inc
 
-                if i == missing_pos:
-                    right_answer = number
-                    print("..", end=" ")
-                else:
-                    print(number, end=" ")
-                number += step_inc
-
-            answer = int(input("\nYour answer: ",))
+        answer = input("\nYour answer: ",)
 
         return answer, right_answer
