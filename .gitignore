@@ -1,4 +1,4 @@
 .venv/
 **/__pycache__/
 brain_games.pyc
-pyproject.toml.swp
+.pyproject.toml.swp
