@@ -1,13 +1,15 @@
 """Blank template for every game."""
 from brain_games.cli import welcome_user
 
+name = welcome_user()
+
 
 def template_game(func):
     """
     Realise logic for game. Gain func with game logic.
     Returns True if user wins 3 times.
     """
-    name = welcome_user()
+    # name = welcome_user()
     win_game = 0
 
     while win_game != 3:

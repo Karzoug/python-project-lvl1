@@ -25,7 +25,7 @@ def main():
                     right_answer = number
                     print("..", end=" ")
                 else:
-                    print(number, end=" ")            
+                    print(number, end=" ")
                 number += step_inc
 
             answer = int(input("\nYour answer: ",))
