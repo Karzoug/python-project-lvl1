@@ -26,7 +26,7 @@ def main():
                 progression.append(number)
             number += step_inc
 
-        print('Question: ', progression)
-        answer = input("Your answer: ",)
+        print('Question:', progression)
+        answer = input("Your answer:",)
 
         return answer, right_answer

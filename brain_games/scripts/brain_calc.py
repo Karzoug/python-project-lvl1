@@ -23,7 +23,7 @@ def main():
             right_answer = number1 * number2
 
         while not isinstance(answer, int):
-            print("Question: ", number1, operand, number2)
-            answer = int(input("Your answer: ",))
+            print("Question:", number1, operand, number2)
+            answer = int(input("Your answer:",))
 
         return answer, right_answer

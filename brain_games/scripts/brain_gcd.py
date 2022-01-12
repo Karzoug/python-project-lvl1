@@ -28,7 +28,7 @@ def main():
         right_answer = gcd
 
         while not isinstance(answer, int):
-            print("Question: ", number1, number2)
-            answer = int(input("Your answer: ",))
+            print("Question:", number1, number2)
+            answer = int(input("Your answer:",))
 
         return answer, right_answer
