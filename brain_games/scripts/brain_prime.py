@@ -14,7 +14,7 @@ def main():
         right_answer = 'no' if dividers else 'yes'
 
         while answer not in ['yes', 'no', 'Yes', 'No']:
-            print('Question: ', number)
+            print('Question:', number)
             answer = input("Your answer: ")
 
         return answer, right_answer
