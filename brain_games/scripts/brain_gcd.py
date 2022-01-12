@@ -7,7 +7,7 @@ import random
 def main():
 
     games_main()
-    print('Find the greatest common divisor of given numbers..')
+    print('Find the greatest common divisor of given numbers.')
 
     @template_game
     def gcd_logic(answer='', right_answer=''):
