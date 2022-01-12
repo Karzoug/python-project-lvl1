@@ -1,7 +1,5 @@
 """Blank template for every game."""
-from brain_games.cli import welcome_user
-
-name = welcome_user()
+from brain_games.cli import name
 
 
 def template_game(func):

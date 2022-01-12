@@ -7,3 +7,7 @@ def welcome_user():
     print('Hello,', name, '!')
 
     return name
+
+
+# if __name__ == 'game_template':
+name = welcome_user()
