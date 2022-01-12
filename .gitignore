@@ -1,4 +1,5 @@
 .venv/
-**/__pycache__/
-brain_games.pyc
+brain_games/__pycache__/
+brain_games/scripts/__pycache__/
+brain_games/brain_games.pyc
 .pyproject.toml.swp

@@ -19,6 +19,6 @@ jobs:
       - name: build brain games
         run: make build
       - name: install linter
-        run: poetry add --dev wemake-python-styleguide
+        run: poetry add --dev flake8
       - name: run linter
         run: make lint
