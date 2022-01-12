@@ -16,6 +16,6 @@ def main():
 
         while answer not in ['yes', 'no', 'Yes', 'No']:
             print('Question:', number)
-            answer = input("Your answer: ",)
+            answer = input("Your answer:",)
 
         return answer, right_answer
