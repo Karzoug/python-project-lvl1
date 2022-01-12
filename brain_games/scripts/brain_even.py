@@ -15,7 +15,7 @@ def main():
         right_answer = 'yes' if number % 2 == 0 else 'no'
 
         while answer not in ['yes', 'no', 'Yes', 'No']:
-            print('Question: ', number)
+            print('Question:', number)
             answer = input("Your answer: ",)
 
         return answer, right_answer
