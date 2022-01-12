@@ -3,6 +3,7 @@
 
 def welcome_user():
     """Welcome user func. Returns user name"""
+    print('Welcome to the Brain Games!')
     name = input('May I have your name? ')
     print('Hello,', name, '!')
 
